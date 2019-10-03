@@ -6,17 +6,36 @@ html,
       width: 100%;
     }
     #viewDiv {
-      height: calc(100% - 40px);
+
+      background: #eee;
+    	background-position: center;
+    	background-size: 100%;
+      border: 1px solid #ddd;
+      height: 500px;
+      padding: 5px;
+    	position: relative;
+      width: 100%;
+
+    	box-shadow: 0px 4px 10px -3px rgba(0,0,0,0.75);
+
+    	transition: all 0.5s ease;
     }
     #header {
-      height: 60px;
+      height: 80px;
       width: 100%;
-      background-color: blue;
+      border: 1px solid #ddd;
+      padding: 5px;
+      background-color: #eee;
     }
     #searchDiv {
-      align: "center";
       margin-right: 10px;
-      margin-top: 4px;
+      margin-top: 12px;
+      border: 3px solid #ddd;
+      font-size: 2em;
+      padding: 8px;
+      width: 100%;
+
+    	box-shadow: 0px 4px 10px -3px rgba(0,0,0,0.75);
     }
 
 body{
@@ -35,16 +54,8 @@ h1{
 	text-shadow: 0px 1px 5px rgba(20, 20, 20, 1);
 }
 
- 
-#searchTextField{
-  border: 3px solid #ddd;
-  font-size: 2em;
-  padding: 8px;
-  width: 100%;
-	-webkit-box-shadow: 0px 4px 10px -3px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 4px 10px -3px rgba(0,0,0,0.75);
-	box-shadow: 0px 4px 10px -3px rgba(0,0,0,0.75);
-}
+
+
 #info{
   background: #eee;
 	background-position: center;
