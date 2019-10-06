@@ -15,7 +15,16 @@ require([
       var view = new SceneView({
         scale: 123456789,
         container: "viewDiv",
-        map: map
+        map: map,
+        popup: {
+           actions: [],
+           dockEnabled: true,
+           dockOptions: {
+             buttonEnabled: true,
+             breakpoint: false,
+             position: "bottom-right",
+           }
+         }
       });
 
       var searchWidget = new Search({
