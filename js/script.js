@@ -5,13 +5,13 @@ require([
   "esri/widgets/Search"
 ], function(Map, MapView, FeatureLayer, Search) {
   var map = new Map({
-    basemap: "satellite",
-    ground: "world-elevation"
+    basemap: "hybrid",
+    
   });
 
   var view = new MapView({
-    center: [174.52176, -41.1858], // The center of the map as lon/lat
-    scale: 1000000,
+    center: [174.8, -41.29], // The center of the map as lon/lat
+    scale: 400000,
     container: "viewDiv",
     map: map,
     popup: {
@@ -31,10 +31,10 @@ require([
     popupTemplate: {
       //autocasts as new PopupTemplate()
       
-      title: "<h4>Who do you call?</h4>",
-      content: "Call these people" +
-              "<ul><li>Your local council is {TAName}</li>" +
-              "<li>Your regional council is {RegionName}</li><ul>",
+      title: "<h6>Who do I call?</h6>",
+      content: 
+              "<ul><li>Your Local Council: <a href='http://{TA_URL}' target='_blank'>{TAName}</a></li>" +  
+              "<li>Your Regional council: <a href='http://{Region_URL}' target='_blank'>{RegionName}</a></li><ul>",
       overwriteActions: true
     }
   });

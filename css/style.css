@@ -12,7 +12,7 @@ body{
 	margin-top: 2%;
   max-width: 80%;
 	min-width: 300px;
-	text-align: center;
+
    background:
     /* top, transparent  */
     linear-gradient(97deg, rgba(0,47,93,0.4) 0%, rgba(0,162,225,0.8) 37%),
@@ -50,6 +50,7 @@ h1{
        background: rgba(255, 255, 255, 0.8);
       
     }
+
     #searchDiv {
       margin-right: 10px;
       margin-top: 12px;
@@ -83,3 +84,12 @@ h1{
 .esri-view-width-medium .esri-popup__main-container {
     width: 100%;
 }
+
+ .infoDiv {
+      height: 40px;
+      width: 100%;
+      
+      padding: 5px;
+      background: rgba(255, 255, 255, 0.8);
+      
+    }

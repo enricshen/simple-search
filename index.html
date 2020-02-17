@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sarala:regular,700"/>
     <link rel="stylesheet" href="https://js.arcgis.com/4.12/esri/css/main.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
     <script src="https://js.arcgis.com/4.12/"></script>
 
     <script src="js/script.js"></script>
@@ -44,9 +48,77 @@
   </div>
 </nav>
     <h1>Search Window</h1>
+    <p>
+      Don't know who is your local council or regional council? Find out by typin your address below.
+    </p>
     <div id="header">
       <div id="searchDiv"></div>
     </div>
     <div id="viewDiv"></div>
+    <br>
+    
+      <!-- info session-->
+      <div class="infoDiv" id="accordion" >
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          When do I call my Local Council?
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <p>Territorial Local Authorities (city or district councils)  are responsible for essential community services, such as:</p>
+        <ul>
+          <li>consents for subdivisions, commercial/residential buildings</li>
+          <li>local road maintenance (excluding state highways)</li>
+          <li>water, sewerage, stormwater, rubbish collection services</li>
+          <li>community services like libraries, swimming pools and pulic parks</li>
+        </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          When do I call my Regional Council?
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <p>Regional Council are responsible for natural resources and economic development in the region,  such as:</p>
+        <ul>
+          <li>looking after freshwater, land, air and coastal water</li>
+          <li>managing rivers, mitigating soil erosion and flood control</li>
+          <li>regional emergency management and civil defence preparedness.</li>
+          <li>regional transport planning</li>
+          <li>Harbour navigation and safety, oil spills and other marine pollution</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          What is A unitary authority?
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+       <p>A unitary authority has both the responsibilities of a local council and a regional council. </p>
+        <p>
+          There are six unitary authorities in New Zealand: Auckland Council, Gisborne District Council, Chatham Islands Council, Nelson City Council, Marlborough District Council and Tasman District Council.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    </div>
   </body>
 </html>
