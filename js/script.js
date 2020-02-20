@@ -56,8 +56,17 @@ require([
         exactMatch: false,
         outFields: ["Address", "TAName", "RegionName"],
         name: "Address",
-        placeholder: "Search for your address"
+        placeholder: "Search for your address",
+        //zoomScale: 50000,
+        resultSymbol: {
+            type: "simple-marker",
+            outline: { cap: "round", width: 1.25, color: [36, 36, 36, 0.86] },
+            size: 10,
+            color: [230, 152, 0, 0.81]
+          }
       }
     ]
   });
 });
+
+
