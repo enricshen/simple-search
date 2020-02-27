@@ -25,7 +25,7 @@ require([
     },
     popup: {
       actions: [],
-      dockEnabled: true,
+      dockEnabled: false,
       dockOptions: {
         buttonEnabled: true,
         breakpoint: false,
@@ -111,6 +111,7 @@ require([
     container: "searchDiv",
     allPlaceholder: "Address Search",
     includeDefaultSources: false,
+    locationEnabled:false,
     sources: [
       {
         layer: featureLayerDistricts,
@@ -120,7 +121,7 @@ require([
         outFields: ["Address", "TAName", "RegionName"],
         name: "Address",
         placeholder: "Search for your address",
-        //zoomScale: 50000,
+        //zoomScale: 9000000,
         resultSymbol: {
             type: "simple-marker",
             outline: { cap: "round", width: 1.25, color: [36, 36, 36, 0.86] },
