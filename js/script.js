@@ -121,7 +121,7 @@ require([
         outFields: ["Address", "TAName", "RegionName"],
         name: "Address",
         placeholder: "Search for your address",
-        //zoomScale: 9000000,
+        //zoomScale: 50000,
         resultSymbol: {
             type: "simple-marker",
             outline: { cap: "round", width: 1.25, color: [36, 36, 36, 0.86] },
