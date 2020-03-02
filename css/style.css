@@ -62,58 +62,55 @@ body {
   width: 100%;
 }
 
-#infoHeader {
-  padding: 5px;
-  border: 2px solid #FFFFFF;
+#info-section {
+  padding: 50px 0;
   background: #26547c;
 }
 
-.input-header {
-  font-family: "Noto Serif", serif;
-  text-align: center;
+#info-section .section-header h3,
+#info-section .section-header p {
+  color: #fff;
+}
+
+#info-section .card i {
+    font-size: 35px;
+    padding-top: 10px;
+    text-align:center;
+  
+}
+
+.section-header h3 {
+  font-size: 36px;
+  color: #283d50;
+  
+  font-weight: 500;
+  position: relative;
+}
+
+.section-header p {
+  
   margin: auto;
+  font-size: 15px;
+  padding-bottom: 50px;
+  color: #556877;
+  
 }
 
-.input-group {
-  margin-top: 10px;
-  margin-bottom: 10px;
+#info-section .card {
+  background: rgba(255, 255, 255, 0.7);
+ box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  margin: 0 1px;
+  padding: 15px 0;
+  
+ 
+  transition: 0.3s ease-in-out;
+  height: 100%;
 }
 
-.panel {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.9) !important;
-  border: solid 1px #FFFFFF;
-}
-
-.panel-heading {
-  font-family: "Noto Serif", serif;
-  padding: 2px;
-  background-color: rgba(6, 136, 187, 0.4) !important;
-}
-
-.panel-heading a {
-  color: #343a40;
-}
-
-.panel-body p {
-  margin: 2px 8px;
-}
-
-#accordion_search_bar {
-  border: solid 1.5px #ffffff;
-}
-
-.fa-search {
-  font-size: 1.3em;
-}
-
-.fa-volume-control-phone {
-  font-size: 1.4em;
-}
 
 .page-footer {
-  background: rgba(255, 255, 255, 0.8);
+  background: #fffcf9;
 }
 
 #warning {
